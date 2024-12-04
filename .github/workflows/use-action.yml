@@ -12,8 +12,8 @@ jobs:
         uses: actions/checkout@v2
 
       - name: Run custom action
-        uses: irivers6119/prr_ghe_action/.github/workflows/action.yml@main
-        
+        uses: irivers6119/prr_ghe_action@main
+
         with:
           input_component: 'eventer-event-bridge-proxy'
           input_component_id: 'CI0651176'
