@@ -5,7 +5,7 @@ on:
 
 jobs:
 
-    uses: irivers6119/prr_ghe_action/.github/workflows/action.yml@main
+    uses: irivers6119/prr_ghe_action@main
     runs-on: ubuntu-latest
     steps:
     - name: Checkout code
