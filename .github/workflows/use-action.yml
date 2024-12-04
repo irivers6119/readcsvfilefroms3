@@ -10,5 +10,4 @@ jobs:
       with:
           input_component: 'eventer-event-bridge-proxy'
           input_component_id: 'CI0651176'
-          AUTH: ${{ secrets.AUTH }}
   
