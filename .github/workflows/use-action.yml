@@ -12,7 +12,7 @@ jobs:
         uses: actions/checkout@v2
 
       - name: Run custom action
-        uses: irivers6119/prr_ghe_action@main
+        uses: irivers6119/prr_ghe_action/.github/workflows/action.yml
         
         with:
           Default: ${{ github.repository }}
