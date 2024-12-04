@@ -5,11 +5,13 @@ on:
 
 jobs:
 
-    uses: irivers6119/prr_ghe_action@main
+    
     runs-on: ubuntu-latest
     steps:
     - name: Checkout code
       uses: actions/checkout@v2
+    - name: GHE
+      uses: irivers6119/prr_ghe_action@main
       with:
           Default: ${{ github.repository }}
           input_component: 'eventer-event-bridge-proxy'
