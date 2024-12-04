@@ -4,19 +4,15 @@ on:
   workflow_dispatch:
 
 jobs:
-  use-action:
+
+    uses: irivers6119/prr_ghe_action/.github/workflows/action.yml@main
     runs-on: ubuntu-latest
-
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v2
-
-      - name: Run custom action
-        uses: irivers6119/prr_ghe_action@v4
-        
-        with:
+    - name: Checkout code
+      uses: actions/checkout@v2
+      with:
           Default: ${{ github.repository }}
           input_component: 'eventer-event-bridge-proxy'
           input_component_id: 'CI0651176'
         env:
-          AUTH: ${{ secrets.AUTH }}
+            AUTH: ${{ secrets.AUTH }}
