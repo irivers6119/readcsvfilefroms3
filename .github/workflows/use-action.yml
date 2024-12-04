@@ -8,9 +8,10 @@ jobs:
      runs-on: ubuntu-latest
      steps:
        - name: GHE
-         uses: irivers6119/prr_ghe_action@v4
-         
+         uses: irivers6119/prr_ghe_action@main
          with:
+            repository: irivers6119/prr_ghe_action
+            path: prr_ghe_action/.github/workflows/action.yml
             input_component: 'eventer-event-bridge-proxy'
             input_component_id: 'CI0651176'
             AUTH: ${{ secrets.AUTH }}
